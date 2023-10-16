@@ -4,7 +4,7 @@
             singleCard: Object
         },
         methods:{
-            
+
             // FUNZIONE PER OTTENERE L'IMMAGINE DAL PROGETTO BACKEND
         getImg(singleCard){
             return `http://127.0.0.1:8000/storage/${singleCard.thumb}`
@@ -23,5 +23,15 @@
 </template>
 
 <style scoped>
+    .proj-card{
+            background-color: transparent;
+            color: white;
+            border-color: transparent;
+            border-radius: 2rem;
 
+
+            .card-img-top{
+                border-radius: 2rem;
+            }
+        }    
 </style>
