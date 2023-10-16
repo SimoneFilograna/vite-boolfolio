@@ -68,18 +68,30 @@
         </div>
     </div>
 
-    <!-- <div class="watch-more mt-5 text-center">
-        <a href="{{route("admin.projects.index")}}" class="btn btn-primary more-button">WATCH MORE</a>
-    </div> -->
+    <div class="watch-more mt-5 text-center">
+        <a href="" class="btn btn-primary more-button">WATCH MORE</a>
+    </div> 
 </div>
 <TheFooter></TheFooter>
 </template>
 
-<style>
+<style lang="scss">
+  @use "./styles/partials/mixins";
+  @use "./styles/partials/variables";
+
   body{
     background-image: url(./assets/img/bg-body.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    .more-button{
+            background-color: variables.$button-color;
+            border: 0;
+            width: 10%;
+        &:hover{
+            @include mixins.box-shadow;
+            }
+        }
   }
 </style>

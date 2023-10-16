@@ -22,7 +22,7 @@
         </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     .proj-card{
             background-color: transparent;
             color: white;
