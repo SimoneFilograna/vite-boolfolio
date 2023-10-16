@@ -14,7 +14,7 @@
 </script>
 
 <template>
-        <div class="card proj-card">
+        <div class="card proj-card" :key="singleCard.id">
             <img :src="getImg(singleCard)" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">{{singleCard.title}}</h5>
