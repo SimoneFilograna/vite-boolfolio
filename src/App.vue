@@ -9,6 +9,8 @@
       }
     },
     methods: {
+
+      // CHIAMATA AXIOS PER OTTENERE I PROGETTI
       getProjects(){
         axios.get("http://127.0.0.1:8000/api/projects")
         .then((response)=>{
@@ -16,8 +18,7 @@
             this.projects = result.data;
             delete result.data;
             this.pagination = result;
-          })
-          
+          })       
         }
       },
       mounted() {
