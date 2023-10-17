@@ -17,7 +17,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#"></a>
+                            <a class="nav-link text-white" href="#">Home</a>
                         </li>
                     </ul>
 

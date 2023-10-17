@@ -18,6 +18,7 @@
             <img :src="getImg(singleCard)" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">{{singleCard.title}}</h5>
+                <router-link :to="{ name: 'project.show', params: { slug: singleCard.slug}}" class="btn btn-primary">Dettagli</router-link>
             </div>
         </div>
 </template>
