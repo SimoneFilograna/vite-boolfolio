@@ -36,25 +36,32 @@
     <div class="container text-white">
         <div class="row">
             <div class="col">
-                <h1 class="display-4">{{ project.title }}</h1>
-                <img :src="getImg(project)" alt="">
-                <div class="badge-container d-flex">
-                    <span class="badge" v-for="tech in project.technologies">{{ tech.name }}</span>
+                <div class="box">
+                    <h1 class="display-4 pb-3">{{ project.title }}</h1>
+
+                    <div class="img-container-show text-center mb-5">
+                        <img :src="getImg(project)" alt="" class="">
+                    </div>
+
+                    <div class="badge-container d-flex">
+                        <span class="badge mx-1 mb-3" :style="`background-color: rgb(${tech.color})`" v-for="tech in project.technologies">{{ tech.name }}</span>
+                    </div>
+                    <!-- <p>Type: {{ project.type.type }}</p>  -->
+                    <p class="">GitHub: 
+                        <a href="{{ project.link }}">Link</a>
+                    </p>
+                    <p>{{ project.description }}</p>
+                    <p>Release: {{ formatDate(project.release) }}</p>
                 </div>
-                <!-- <p>Type: {{ project.type.type }}</p> -->
-                <p class="">GitHub: 
-                    <a href="{{ project.link }}">Link</a>
-                </p>
-                <p>{{ project.description }}</p>
-                <p>Release: {{ formatDate(project.release) }}</p>
             </div>
         </div>
-        <div class="button-container text-center mt-3">
+        <div class="button-container text-center mt-5">
             <router-link class="btn btn-primary more-button" :to="{name: 'projects'}">SEE AL MY PROJECT</router-link>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+
     
 </style>
