@@ -40,7 +40,7 @@
                     <h1 class="display-4 pb-3">{{ project.title }}</h1>
 
                     <div class="img-container-show text-center mb-5">
-                        <img :src="getImg(project)" alt="" class="">
+                        <img :src="getImg(project)" alt="" class="w-75">
                     </div>
 
                     <div class="badge-container d-flex">
