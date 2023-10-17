@@ -49,7 +49,9 @@
                 <p>Release: {{ formatDate(project.release) }}</p>
             </div>
         </div>
-        <router-link :to="{name: 'projects'}">SEE AL MY PROJECT</router-link>
+        <div class="button-container text-center mt-3">
+            <router-link class="btn btn-primary more-button" :to="{name: 'projects'}">SEE AL MY PROJECT</router-link>
+        </div>
     </div>
 </template>
 
