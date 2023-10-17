@@ -64,7 +64,7 @@
     </div>
 
     <div class="watch-more mt-5 text-center">
-        <a href="" class="btn btn-primary more-button">WATCH MORE</a>
+        <RouterLink class="btn btn-primary more-button" :to="{name: 'projects'}">WATCH MORE</RouterLink>
     </div> 
 </div> 
 </template>
