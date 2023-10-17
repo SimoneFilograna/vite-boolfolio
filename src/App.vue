@@ -39,7 +39,7 @@
     background-image: url(./assets/img/bg-body.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    height: 100%;
 
     .more-button{
             background-color: variables.$button-color;

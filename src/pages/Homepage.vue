@@ -58,7 +58,7 @@
 
         <div class="row row-cols-3 mt-5 g-5 p-2" >
                 <div class="col mt-5" v-for="project in projects">
-                  <Card :singleCard="project"></Card>                   
+                    <Card :singleCard="project"></Card>                   
                 </div> 
         </div>
     </div>
