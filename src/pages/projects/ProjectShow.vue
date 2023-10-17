@@ -46,7 +46,7 @@
                     <div class="badge-container d-flex">
                         <span class="badge mx-1 mb-3" :style="`background-color: rgb(${tech.color})`" v-for="tech in project.technologies">{{ tech.name }}</span>
                     </div>
-                    <!-- <p>Type: {{ project.type.type }}</p>  -->
+                    <p>Type: {{ project.type?.type ?? "" }}</p> 
                     <p class="">GitHub: 
                         <a href="{{ project.link }}">Link</a>
                     </p>
