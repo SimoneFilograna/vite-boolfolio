@@ -62,6 +62,13 @@
 </template>
 
 <style lang="scss" scoped>
+    @use "../../styles/partials/mixins";  
+    @use "../../styles/partials/variables";  
 
+    .more-button{
     
+    &:hover{
+        background-color: variables.$button-color;
+    }
+    }
 </style>
