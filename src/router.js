@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage.vue";
 import ProjectsPage from "./pages/projects/Projects.vue";
 import ProjectShow from "./pages/projects/ProjectShow.vue";
 import ErrorPage from "./pages/ErrorPage.vue";
+import Contacts from "./pages/Contacts.vue"
 
 const routes = [
     {
@@ -20,6 +21,11 @@ const routes = [
         path: "/projects/:slug",
         name: "project.show",
         component: ProjectShow
+    },
+    {
+        path: "/contacts",
+        name: "contacts",
+        component: Contacts
     },
     {
         patch: "/:pathMatch(.*)*",

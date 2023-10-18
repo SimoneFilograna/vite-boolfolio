@@ -15,9 +15,12 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                    <ul class="navbar-nav me-auto d-flex gap-2">
                         <li class="nav-item">
                             <router-link class="text-decoration-none text-white" :to="{name: 'homepage'}">Home</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="text-decoration-none text-white" :to="{name: 'contacts'}">Contattami</router-link>
                         </li>
                     </ul>
 
