@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Homepage from "./pages/Homepage.vue";
 import ProjectsPage from "./pages/projects/Projects.vue";
 import ProjectShow from "./pages/projects/ProjectShow.vue";
+import ErrorPage from "./pages/ErrorPage.vue";
 
 const routes = [
     {
@@ -19,6 +20,11 @@ const routes = [
         path: "/projects/:slug",
         name: "project.show",
         component: ProjectShow
+    },
+    {
+        patch: "/:pathMatch(.*)*",
+        name: "error-found",
+        component: ErrorPage,
     }
 ]
 

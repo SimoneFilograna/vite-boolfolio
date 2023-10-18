@@ -15,6 +15,9 @@
                 this.project = resp.data     
                 console.log(this.project)       
                 })
+                .catch(e =>{
+                    this.$router.push({name: "error-found"})
+                })
             },
 
             getImg(proj){

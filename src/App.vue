@@ -40,6 +40,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    background-attachment: fixed;
 
     .more-button{
             background-color: variables.$button-color;
