@@ -28,7 +28,7 @@ const routes = [
         component: Contacts
     },
     {
-        patch: "/:pathMatch(.*)*",
+        path: "/:pathMatch(.*)*",
         name: "error-found",
         component: ErrorPage,
     }
